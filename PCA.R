@@ -10,6 +10,14 @@ summary(ktt1.pr) # PCs
 plot(ktt1.pr) # components
 biplot(ktt1.pr) # components
 
+#reverse the signs
+ktt1.pr$rotation <- -1*ktt1.pr$rotation
+biplot(ktt1.pr)
+
+#reverse the signs of the scores
+ktt1.pr$x <- -1*ktt1.pr$x
+biplot(ktt1.pr)
+
 ## Elegyaránnyal
 kttea <- ktt[,c(8,11:ncol(ktt))]
 kttea$Elegyarány <- as.numeric(kttea$Elegyarány)
