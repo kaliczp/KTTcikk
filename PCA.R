@@ -24,3 +24,8 @@ kttea$Elegyarány <- as.numeric(kttea$Elegyarány)
 ktt2.pr <- prcomp(kttea)
 plot(ktt2.pr)
 biplot(ktt2.pr, scale = 0)
+
+## Csak két mélység
+kttTWO <- ktt[,c("10","60")]
+plot(kttTWO)
+prcomp(kttTWO)
