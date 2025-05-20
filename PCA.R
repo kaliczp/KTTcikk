@@ -28,4 +28,5 @@ biplot(ktt2.pr, scale = 0)
 ## Csak két mélység
 kttTWO <- ktt[,c("10","60")]
 plot(kttTWO)
-prcomp(kttTWO)
+kttTWO.pr <- prcomp(kttTWO)
+summary(kttTWO.pr)
